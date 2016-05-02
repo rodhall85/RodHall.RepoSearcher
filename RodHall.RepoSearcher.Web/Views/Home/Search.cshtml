@@ -1,0 +1,27 @@
+﻿@model RodHall.RepoSearcher.Web.Models.UserSearch
+@{
+    ViewBag.Title = "Repo Searcher - Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Search for GitHub Users</h2>
+
+@using (Html.BeginForm("Search", "Home", FormMethod.Post)) {
+    @Html.AntiForgeryToken()
+
+    <div class="container space-before-30 space-after-30">
+        <div class="row">
+            <div class="col-lg-3 text-right">
+                @Html.LabelFor(m => m.Username)
+            </div>
+            <div class="col-lg-3">
+                @Html.TextBoxFor(m => m.Username)
+            </div>
+            <div class="col-lg-6 ">
+                <input type="submit" value="Search" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+
+}
+

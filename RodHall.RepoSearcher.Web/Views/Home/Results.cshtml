@@ -1,0 +1,49 @@
+﻿@model RodHall.RepoSearcher.Web.Models.RepoUserInfo
+
+@{
+    ViewBag.Title = "Results";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-sm-12 space-before-30 space-after-30">
+    <div class="col-lg-9">
+        <div class="form-group">
+            <div class="col-lg-12 text-right">
+                <h2>@Html.DisplayFor(m => m.User.Name)</h2>
+            </div>
+            <div class="col-lg-12 text-right">
+                @Html.DisplayFor(m => m.User.Location)
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="col-lg-12 text-right">
+            <img src="@Model.User.Avatar_url" alt="Avatar" width="250" height="250" />
+        </div>
+    </div>
+</div>
+
+<table class="table table-striped table-hover table-condensed">
+    <thead>
+        <tr>
+            <th>Repo Name</th>
+            <th>Description</th>
+            <th>No. Stargazers</th>
+        </tr>
+    </thead>
+
+    @foreach (var item in Model.Repos) {
+        <tr>
+            <td>
+                <a href="@item.Html_url">@Html.DisplayFor(i => item.Name)</a>
+            </td>
+            <td>
+                @Html.DisplayFor(i => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(i => item.Stargazers_count)
+            </td>
+        </tr>
+    }
+</table>
+<br />

@@ -1,0 +1,4 @@
+C:\Users\Rod\Documents\Dev\RodHall.RepoSearcher\RodHall.RepoSearcher.Entities\bin\Debug\RodHall.RepoSearcher.Entities.dll
+C:\Users\Rod\Documents\Dev\RodHall.RepoSearcher\RodHall.RepoSearcher.Entities\bin\Debug\RodHall.RepoSearcher.Entities.pdb
+C:\Users\Rod\Documents\Dev\RodHall.RepoSearcher\RodHall.RepoSearcher.Entities\obj\Debug\RodHall.RepoSearcher.Entities.dll
+C:\Users\Rod\Documents\Dev\RodHall.RepoSearcher\RodHall.RepoSearcher.Entities\obj\Debug\RodHall.RepoSearcher.Entities.pdb
